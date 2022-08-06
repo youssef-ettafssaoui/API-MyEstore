@@ -7,6 +7,7 @@ app.use(cors());
 const product = require('./Routes/product');
 app.use("/product/api/",product);
 
+app.use("/", express.static("Uploads"));
 
 const PORT=5000;
 const server = app.listen(PORT,()=>{
